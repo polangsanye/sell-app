@@ -1,0 +1,196 @@
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+  .border-1px:after {
+    -webkit-transform: scaleY(0.7);
+    transform: scaleY(0.7);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+  .border-1px:after {
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+}
+.border-1px {
+  position: relative;
+}
+.border-1px:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid rgba(7, 17, 27, 0.1);
+}
+.ratings {
+  position: absolute;
+  top: 174px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.ratings .overview {
+  display: flex;
+  padding: 18px 0;
+}
+.ratings .overview .overview-left {
+  flex: 0 0 137px;
+  padding-bottom: 6px;
+  width: 137px;
+  border-right: 1px solid rgba(7, 17, 27, 0.1);
+  text-align: center;
+}
+@media only screen and (max-width: 320px) {
+  .ratings .overview .overview-left {
+    flex: 0 0 120px;
+    width: 120px;
+  }
+}
+.ratings .overview .overview-left .score {
+  margin-bottom: 6px;
+  line-height: 28px;
+  font-size: 24px;
+  color: #ff9900;
+}
+.ratings .overview .overview-left .title {
+  margin-bottom: 8px;
+  line-height: 12px;
+  font-size: 12px;
+  color: #07111b;
+}
+.ratings .overview .overview-left .rank {
+  line-height: 10px;
+  font-size: 10px;
+  color: #93999f;
+}
+.ratings .overview .overview-right {
+  flex: 1;
+  padding: 6px 0 6px 24px;
+}
+@media only screen and (max-width: 320px) {
+  .ratings .overview .overview-right {
+    padding-left: 6px;
+  }
+}
+.ratings .overview .overview-right .score-wrap {
+  margin-bottom: 8px;
+  font-size: 0;
+}
+.ratings .overview .overview-right .score-wrap .title {
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: top;
+  color: #07111b;
+  line-height: 18px;
+}
+.ratings .overview .overview-right .score-wrap .star {
+  display: inline-block;
+  margin: 0 12px;
+  vertical-align: top;
+}
+.ratings .overview .overview-right .score-wrap .score {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  color: #ff9900;
+  line-height: 18px;
+}
+.ratings .overview .overview-right .delivery-wrap {
+  font-size: 0;
+}
+.ratings .overview .overview-right .delivery-wrap .title {
+  line-height: 18px;
+  font-size: 12px;
+  color: #07111b;
+}
+.ratings .overview .overview-right .delivery-wrap .delivery {
+  color: #93999f;
+  margin-left: 12px;
+  font-size: 12px;
+}
+.ratings .rating-wrap {
+  padding: 0 18px;
+}
+.ratings .rating-wrap .rating-item {
+  display: flex;
+  padding: 18px 0;
+  position: relative;
+}
+.ratings .rating-wrap .rating-item:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid rgba(7, 17, 27, 0.1);
+}
+.ratings .rating-wrap .rating-item .avatar {
+  flex: 0 0 28px;
+  width: 28px;
+  margin-right: 12px;
+}
+.ratings .rating-wrap .rating-item .avatar img {
+  border-radius: 50%;
+}
+.ratings .rating-wrap .rating-item .content {
+  position: relative;
+  flex: 1;
+}
+.ratings .rating-wrap .rating-item .content .name {
+  margin-bottom: 4px;
+  line-height: 12px;
+  font-size: 10px;
+  color: #07111b;
+}
+.ratings .rating-wrap .rating-item .content .star-wrap {
+  margin-bottom: 6px;
+  font-size: 0;
+}
+.ratings .rating-wrap .rating-item .content .star-wrap .star {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 6px;
+}
+.ratings .rating-wrap .rating-item .content .star-wrap .delivery {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 12px;
+  font-size: 10px;
+  color: #93999f;
+}
+.ratings .rating-wrap .rating-item .content .text {
+  margin-bottom: 8px;
+  line-height: 18px;
+  color: #07111b;
+  font-size: 12px;
+}
+.ratings .rating-wrap .rating-item .content .recommend {
+  line-height: 16px;
+  font-size: 0;
+}
+.ratings .rating-wrap .rating-item .content .recommend .icon-thumb_up,
+.ratings .rating-wrap .rating-item .content .recommend .item {
+  display: inline-block;
+  margin: 0 8px 4px 0;
+  font-size: 9px;
+}
+.ratings .rating-wrap .rating-item .content .recommend .icon-thumb_up {
+  color: #00a0dc;
+}
+.ratings .rating-wrap .rating-item .content .recommend .item {
+  padding: 0 6px;
+  border: 1px solid rgba(7, 17, 27, 0.1);
+  border-radius: 1px;
+  color: #93999f;
+  background: #fff;
+}
+.ratings .rating-wrap .rating-item .content .time {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 12px;
+  font-size: 10px;
+  color: #93999f;
+}

@@ -1,0 +1,79 @@
+.cartctrl {
+  font-size: 0;
+  .cart-desc {
+    display: inline-block;
+    padding: 6px;
+    .inner {
+      display: inline-block;
+      font-size: 24px;
+      line-height: 24px;
+      color: rgb(0, 160, 220);
+    }
+
+    //&.move-enter{
+    //  opacity: 0;
+    //  transform: translate3D(24px,0,0);
+    //  .inner{
+    //    transform: rotate(180deg);
+    //  }
+    //}
+    //&.move-enter-active{
+    //  transition:all 0.4s linear;
+    //  transform: translate3D(0,0,0);
+    //  .inner{
+    //    transition:all 0.4s linear;
+    //    transform: rotate(0);
+    //  }
+    //}
+    //&.move-leave-active{
+    //  transition:all 0.4s linear;
+    //  opacity: 0;
+    //  transform: translate3D(24px,0,0);
+    //  .inner{
+    //    transition:all 0.4s linear;
+    //    transform: rotate(180deg);
+    //  }
+    //}
+
+
+
+
+    &.move-enter,&.move-leave-to{
+      opacity: 0;
+      transform: translate3D(24px,0,0);
+      .inner{
+        transition:all 0.4s linear;
+        transform: rotate(0);
+      }
+    }
+
+    &.move-enter-active,&.move-leave-active{
+      transition:all 0.4s linear;
+      .inner{
+        transform: rotate(180deg);
+        transition:all 0.4s linear;
+      }
+    }
+
+  }
+
+  .cart-count {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 6px;
+    line-height: 24px;
+    width: 12px;
+    text-align: center;
+    font-size: 10px;
+    color: rgb(147, 153, 159)
+  }
+  .cart-add {
+    display: inline-block;
+    padding: 6px;
+    font-size: 24px;
+    line-height: 24px;
+    color: rgb(0, 160, 220)
+
+  }
+
+}

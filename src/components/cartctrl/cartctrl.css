@@ -1,0 +1,49 @@
+.cartctrl {
+  font-size: 0;
+}
+.cartctrl .cart-desc {
+  display: inline-block;
+  padding: 6px;
+}
+.cartctrl .cart-desc .inner {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 24px;
+  color: #00a0dc;
+}
+.cartctrl .cart-desc.move-enter,
+.cartctrl .cart-desc.move-leave-to {
+  opacity: 0;
+  transform: translate3D(24px, 0, 0);
+}
+.cartctrl .cart-desc.move-enter .inner,
+.cartctrl .cart-desc.move-leave-to .inner {
+  transition: all 0.4s linear;
+  transform: rotate(0);
+}
+.cartctrl .cart-desc.move-enter-active,
+.cartctrl .cart-desc.move-leave-active {
+  transition: all 0.4s linear;
+}
+.cartctrl .cart-desc.move-enter-active .inner,
+.cartctrl .cart-desc.move-leave-active .inner {
+  transform: rotate(180deg);
+  transition: all 0.4s linear;
+}
+.cartctrl .cart-count {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 6px;
+  line-height: 24px;
+  width: 12px;
+  text-align: center;
+  font-size: 10px;
+  color: #93999f;
+}
+.cartctrl .cart-add {
+  display: inline-block;
+  padding: 6px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #00a0dc;
+}
